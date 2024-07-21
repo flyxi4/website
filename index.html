@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#videos">Videos</a></li>
+      </ul>
+      <button id="toggleDarkMode">Toggle Dark Mode</button>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h1>About Us</h1>
+      <p>Welcome to our eco-blog where we share articles and videos about ecology and sustainability.</p>
+    </section>
+    
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    
+    <section id="articles">
+      <h1>Articles</h1>
+      <article>
+        <h2>Article Title 1</h2>
+        <p>Content of article 1...</p>
+        <div class="article-buttons">
+          <button class="like-button">Like</button>
+          <button class="share-button" data-url="http://example.com/article1">Share</button>
+        </div>
+      </article>
+      <!-- Add more articles here -->
+    </section>
+    
+    <section id="videos">
+      <h1>Videos</h1>
+      <article>
+        <h2>Video Title 1</h2>
+        <video controls>
+          <source src="path_to_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="article-buttons">
+          <button class="like-button">Like</button>
+          <button class="share-button" data-url="http://example.com/video1">Share</button>
+        </div>
+      </article>
+      <!-- Add more videos here -->
+    </section>
+    
+    <section id="comments">
+      <h1>Comments</h1>
+      <form id="commentForm">
+        <label for="comment">Add a Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div id="commentsSection">
+        <!-- Comments will be displayed here -->
+      </div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
